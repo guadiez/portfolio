@@ -10,9 +10,9 @@ export default function Navbar() {
   const active = useActiveSection(navItems.map((n) => n.id))
 
   const handleClick = (id) => {
-    setOpen(false)
     const el = document.getElementById(id)
     if (el) el.scrollIntoView({ behavior: 'smooth' })
+    setOpen(false)
   }
 
   return (
