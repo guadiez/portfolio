@@ -18,6 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Keeps section titles visible below the fixed navbar when the nav
+   links scroll the page to a section, instead of landing right behind it. */
+[id] {
+  scroll-margin-top: 88px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
