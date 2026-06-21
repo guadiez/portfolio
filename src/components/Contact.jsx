@@ -41,12 +41,12 @@ export default function Contact() {
                 href={href}
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel={href.startsWith('http') ? 'noreferrer' : undefined}
-                className="group flex items-center gap-3 text-ink/80 hover:text-ink transition-colors w-fit"
+                className="group flex items-center gap-3 text-ink/80 hover:text-ink transition-colors w-full max-w-full"
               >
-                <span className="w-9 h-9 rounded-full border border-ink/40 flex items-center justify-center group-hover:border-ink group-hover:bg-ink group-hover:text-paper transition-colors">
+                <span className="w-9 h-9 shrink-0 rounded-full border border-ink/40 flex items-center justify-center group-hover:border-ink group-hover:bg-ink group-hover:text-paper transition-colors">
                   <Icon size={16} aria-hidden="true" />
                 </span>
-                <span className="eyebrow text-sm tracking-[0.12em]">{label}</span>
+                <span className="eyebrow text-sm tracking-[0.12em] break-all">{label}</span>
               </a>
             ))}
           </Reveal>
@@ -55,3 +55,4 @@ export default function Contact() {
     </section>
   )
 }
+
