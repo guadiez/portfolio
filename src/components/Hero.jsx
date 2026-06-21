@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 paper-grain overflow-hidden"
+      className="relative min-h-[100dvh] flex flex-col justify-center px-6 md:px-12 paper-grain overflow-hidden"
     >
       <PageBadge number="01" className="absolute top-6 right-6 md:top-10 md:right-10 z-10" />
 
