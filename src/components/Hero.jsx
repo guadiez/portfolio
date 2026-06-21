@@ -30,10 +30,10 @@ export default function Hero() {
           variants={item}
           className="flex flex-wrap items-baseline gap-x-6 md:gap-x-10 gap-y-2"
         >
-          <h1 className="font-display text-ink text-[16vw] leading-[0.85] md:text-[9vw] xl:text-[7.5rem]">
+          <h1 className="font-display text-ink text-[13vw] leading-[0.85] md:text-[9vw] xl:text-[7.5rem]">
             Gua
           </h1>
-          <h1 className="font-display text-ink text-[16vw] leading-[0.85] md:text-[9vw] xl:text-[7.5rem] -rotate-1">
+          <h1 className="font-display text-ink text-[13vw] leading-[0.85] md:text-[9vw] xl:text-[7.5rem] -rotate-1">
             Diez
           </h1>
         </motion.div>
@@ -55,11 +55,11 @@ export default function Hero() {
         variants={item}
         initial="hidden"
         animate="show"
-        className="relative z-[1] mt-16 md:mt-24 flex items-center justify-between max-w-[1320px] mx-auto w-full"
+        className="relative z-[1] mt-8 sm:mt-16 md:mt-24 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between max-w-[1320px] mx-auto w-full"
       >
         <a
           href={`mailto:${siteMeta.email}`}
-          className="eyebrow text-grey-dark text-[11px] md:text-sm tracking-[0.18em] hover:text-ink transition-colors"
+          className="eyebrow text-grey-dark text-[11px] md:text-sm tracking-[0.18em] hover:text-ink transition-colors break-all"
         >
           {siteMeta.email}
         </a>
@@ -67,9 +67,9 @@ export default function Hero() {
           href="https://instagram.com/gua.diez"
           target="_blank"
           rel="noreferrer"
-          className="eyebrow flex items-center gap-2 text-grey-dark text-[11px] md:text-sm tracking-[0.18em] hover:text-ink transition-colors"
+          className="eyebrow flex items-center gap-2 text-grey-dark text-[11px] md:text-sm tracking-[0.18em] hover:text-ink transition-colors break-all"
         >
-          <FiInstagram aria-hidden="true" />
+          <FiInstagram aria-hidden="true" className="shrink-0" />
           {siteMeta.instagram}
         </a>
       </motion.div>
