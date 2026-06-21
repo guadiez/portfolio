@@ -10,10 +10,14 @@ export default function Navbar() {
   const active = useActiveSection(navItems.map((n) => n.id))
 
   const handleClick = (id) => {
-    const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
     setOpen(false)
-  }
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const el = document.getElementById(id)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+      }, 400) // mismo tiempo que el exit de AnimatePresence
+    })
+}
 
   return (
     <header
