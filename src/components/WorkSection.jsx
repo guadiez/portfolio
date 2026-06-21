@@ -36,8 +36,7 @@ export default function WorkSection({ work }) {
     >
       <PageBadge
         number={page}
-        light
-        className="absolute top-6 right-6 md:top-8 md:right-8 z-20 mix-blend-difference"
+        className="absolute top-6 right-6 md:top-8 md:right-8 z-20"
       />
 
       {/* Left column: thumbnails + title block */}
